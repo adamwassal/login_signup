@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form" id="form">
+        <center>
+          <h2 id="title">Login</h2>
+          <form action="">
+            <div class="input_div">
+              <input type="email" name="email" id="email" placeholder="Email" required/>
+            </div>
+            <div class="input_div">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div class="input_div">
+                <input
+                  type="hidden"
+                  name="phonenumber"
+                  id="pn"
+                  placeholder="Phonenumber"
+                  minlength="11"
+                  required
+                />
+              </div>
+            <div class="input_div" style="position: relative;">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <span><input type="button" onclick="show_password()" style="position: absolute; top: 5px;" value="show"></span>
+            </div>
+            <div class="input_div submit">
+              <button id="submit" onclick="login()">Login</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+          <a href="#" onclick="signup_w()" id="c_w">Craete account!</a>
+        </center>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

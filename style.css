@@ -1,0 +1,77 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 20%;
+    background-color: rgb(218, 218, 218);
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    color: white;
+}
+
+.form {
+    background: linear-gradient(rgb(155, 26, 26),white, green);
+    border-radius: 1rem;
+    width: 23rem;
+    scale: 1.4;
+}
+
+.input_div {
+    margin: 10px;
+}
+
+input:not(input[type = 'button']) {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: solid green 2px;
+    border-right: solid green 2px;
+    width: 10rem;
+    transition: 1s;
+    background: transparent;
+
+}
+input:focus:not(input[type = 'button'])  {
+    width: 17rem;
+    transition: 1s;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+button {
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-bottom: solid green 2px;
+    border-right: solid green 2px;
+    transition: 0.2s;
+}
+
+button:hover {
+    padding: 4px;
+    transition: 0.2s;
+
+}
+
+.has {
+    border-bottom: solid red 2px;
+}
+
+a {
+    text-decoration: none;
+}
